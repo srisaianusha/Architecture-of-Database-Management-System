@@ -1,0 +1,14 @@
+<?php
+
+require('_db.php');
+
+$delete_id = $_GET['del'];
+
+$query = 'DELETE FROM tests WHERE test_id = $delete_id';
+
+if($db->query($query)){
+	//echo '<script>window.open('testdata.php','_self')</script>';	
+	
+}
+
+?>
